@@ -27,7 +27,7 @@
               <tbody>
                 <% @tasks.each do |task| %>
                   <tr>
-                    <th scope="row">[Here should be No.]</th>
+                    <td><%= task.position %></td>
                     <td>
                       <% if task.deadline.present? %>
                         <span class='<%= deadline_badge_class(task) %>'>
